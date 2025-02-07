@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dromokart - Classifica</title>
+  <!-- Importa un font moderno -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Collegamento al file CSS esterno -->
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Reset e base styling */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Header */
+    header {
+      background: #222;
+      color: #fff;
+      padding: 10px 20px;
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo img {
+      height: 50px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.3s;
+      cursor: pointer;
+    }
+    nav ul li a:hover {
+      color: #4CAF50;
+    }
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: #e2e2e2;
+      margin-bottom: 40px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #666;
+    }
+    /* Main Content */
+    main {
+      padding: 0 20px 40px;
+    }
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    /* Tabella classifica */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background: #4CAF50;
+      color: #fff;
+    }
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 20px;
+      margin-top: 40px;
+    }
+    /* Modal per il Login */
+    .modal {
+      display: none; /* Nascosto di default */
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      background: #fff;
+      margin: auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    .modal-content h2 {
+      margin-bottom: 20px;
+    }
+    .modal-content input[type="text"],
+    .modal-content input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .modal-content button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .modal-content button:hover {
+      background-color: #45a049;
+    }
+    .close-modal {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #aaa;
+      cursor: pointer;
+    }
+    .close-modal:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header comune -->
+  <header>
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html"><img src="immagini/LOGO_KART.png" alt="Logo Dromokart"></a>
+      </div>
+      <!-- Menu di navigazione -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chi-siamo.html">Chi Siamo</a></li>
+          <li><a href="tracciato.html">Il Tracciato</a></li>
+          <li><a href="classifica.html">Classifica</a></li>
+          <li><a id="loginBtn">LOGIN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Classifica</h1>
+    <p>Consulta la classifica dei piloti</p>
+  </section>
+
+  <!-- Contenuto principale -->
+  <main>
+    <div class="content">
+      <table>
+        <thead>
+          <tr>
+            <th>Posizione</th>
+            <th>Pilota</th>
+            <th>Tempo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mario Rossi</td>
+            <td>00:01:25</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Luca Bianchi</td>
+            <td>00:01:30</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Giulia Verdi</td>
+            <td>00:01:32</td>
+          </tr>
+          <!-- Aggiungi ulteriori righe per altri piloti -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Footer comune -->
+<footer>
+  <p>&copy; 2025 KacioKart S.R.L. Tutti i diritti riservati.</p>
+</footer>
+
+  <!-- Modal per il Login -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <h2>Login</h2>
+      <form action="login.php" method="post">
+        <input type="text" name="username" placeholder="Nome utente" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Accedi</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Script per il Modal, eseguito dopo il caricamento del DOM -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var loginBtn = document.getElementById("loginBtn");
+      var modal = document.getElementById("loginModal");
+      var closeModal = document.getElementById("closeModal");
+
+      if (loginBtn) {
+        loginBtn.addEventListener("click", function() {
+          modal.style.display = "flex";
+        });
+      }
+
+      if (closeModal) {
+        closeModal.addEventListener("click", function() {
+          modal.style.display = "none";
+        });
+      }
+
+      window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
