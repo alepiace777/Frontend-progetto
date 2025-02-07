@@ -4,183 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dromokart - Il Tracciato</title>
-  <!-- Importa un font moderno -->
+  <!-- Importa il font Roboto -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Collegamento al file CSS esterno -->
   <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Stili aggiuntivi per la sezione descrizione/immagine -->
   <style>
-    /* Reset e base styling */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    /* Header */
-    header {
-      background: #222;
-      color: #fff;
-      padding: 10px 20px;
-    }
-    .header-container {
+    .additional-details {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap; /* In caso di schermi piccoli, gli elementi andranno in colonna */
       align-items: center;
-    }
-    .logo img {
-      height: 50px;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-    }
-    nav ul li {
-      margin-left: 20px;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-      transition: color 0.3s;
-      cursor: pointer;
-    }
-    nav ul li a:hover {
-      color: #4CAF50;
-    }
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-      background: #e2e2e2;
-      margin-bottom: 40px;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2em;
-      color: #666;
-    }
-    /* Main Content */
-    main {
-      padding: 0 20px 40px;
-    }
-    .content {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
+      padding: 20px;
       gap: 20px;
-      justify-content: center;
     }
-    /* Modifica per immagine più grande */
-    .track-image {
-      flex: 1 1 600px;
-      max-width: 800px;
+    .additional-text, 
+    .additional-image {
+      flex: 1;
     }
-    .track-image img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .specs {
-      flex: 1 1 300px;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .specs h2 {
-      margin-bottom: 20px;
-      color: #4CAF50;
-      font-size: 1.8em;
-    }
-    .specs ul {
-      list-style: none;
-      padding: 0;
-    }
-    .specs li {
-      margin-bottom: 15px;
-      font-size: 1.1em;
-    }
-    .specs li span {
-      font-weight: bold;
-    }
-    /* Footer */
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 15px 20px;
-      margin-top: 40px;
-    }
-    /* Modal per il Login */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.5);
-      align-items: center;
-      justify-content: center;
-    }
-    .modal-content {
-      background: #fff;
-      margin: auto;
-      padding: 20px;
-      border-radius: 8px;
-      width: 90%;
-      max-width: 400px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      position: relative;
-    }
-    .modal-content h2 {
-      margin-bottom: 20px;
-    }
-    .modal-content input[type="text"],
-    .modal-content input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .modal-content button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 4px;
-      width: 100%;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    .modal-content button:hover {
-      background-color: #45a049;
-    }
-    .close-modal {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      font-size: 24px;
-      font-weight: bold;
-      color: #aaa;
-      cursor: pointer;
-    }
-    .close-modal:hover {
-      color: #000;
-    }
-    /* Responsive per dispositivi mobili */
-    @media (max-width: 768px) {
-      .content {
-        flex-direction: column;
-        align-items: center;
-      }
+    /* Rende l'immagine responsiva */
+    .additional-image img {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
   </style>
 </head>
@@ -188,37 +34,37 @@
   <!-- Header comune -->
   <header>
     <div class="header-container">
-      <!-- Logo -->
       <div class="logo">
-        <a href="index.html"><img src="immagini/LOGO_KART.png" alt="Logo Dromokart"></a>
+        <a href="index.html">
+          <img src="immagini/LOGO_KART.png" alt="Logo Dromokart">
+        </a>
       </div>
-      <!-- Menu di navigazione -->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="chi-siamo.html">Chi Siamo</a></li>
           <li><a href="tracciato.html">Il Tracciato</a></li>
           <li><a href="classifica.html">Classifica</a></li>
-          <li><a id="loginBtn">LOGIN</a></li>
+          <li><a href="concessionario.html">Concessionario</a></li>
+          <li><a id="loginBtn" href="#">LOGIN</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
+  
   <!-- Hero Section -->
   <section class="hero">
     <h1>Il Tracciato</h1>
     <p>Scopri le caratteristiche della nostra pista</p>
   </section>
-
+  
   <!-- Contenuto principale -->
   <main>
     <div class="content">
-      <!-- Immagine della pista più grande -->
+      <!-- Sezione immagine e specifiche -->
       <div class="track-image">
         <img src="immagini/pista.png" alt="Pista di Kart">
       </div>
-      <!-- Specifiche della pista -->
       <div class="specs">
         <h2>Specifiche</h2>
         <ul>
@@ -229,13 +75,34 @@
         </ul>
       </div>
     </div>
+    
+    <!-- Sezione: Descrizione a sinistra e immagine a destra -->
+    <section class="additional-details">
+      <div class="additional-text">
+        <p>
+          <strong>Capienza piloti</strong><br>
+          in gara 34 – prove libere fino a 51<br><br>
+          <strong>Bande magnetiche</strong><br>
+          N. 3 bande magnetiche ALFANO<br><br>
+          <strong>Curve</strong><br>
+          Curve a raggio costante e variabile. Cordoli interni ed esterni a norme CIK<br><br>
+          <strong>Asfalto</strong><br>
+          Manto di asfalto realizzato con bitume STIRELF<br><br>
+          <strong>Area Paddock</strong><br>
+          Area Paddock interamente asfaltata e recintata
+        </p>
+      </div>
+      <div class="additional-image">
+        <img src="immagini/pista2.jpg" alt="Dettagli Pista">
+      </div>
+    </section>
   </main>
-
+  
   <!-- Footer comune -->
-<footer>
-  <p>&copy; 2025 KacioKart S.R.L. Tutti i diritti riservati.</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 KacioKart S.R.L. Tutti i diritti riservati.</p>
+  </footer>
+  
   <!-- Modal per il Login -->
   <div id="loginModal" class="modal">
     <div class="modal-content">
@@ -248,7 +115,7 @@
       </form>
     </div>
   </div>
-
+  
   <!-- Script per il Modal -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {

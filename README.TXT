@@ -2,14 +2,8 @@
 
 HOMEPAGE (Andrea)
 
--Classifica ?
--aggiungere bottone concessionario
--Descrizione con immagine su tutte le tipologie di kart
--Prezzario 
--contatti in fondo alla pagina
-
 CHI SIAMO (Andrea)
--aggiungere un immagine e una nostra descrizione di questo progetto in breve
+-aggiungere un immagine del nostro team ?
 
 TRACCIATO (Andrea)
 -Maggiori descrizione della pista

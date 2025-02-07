@@ -4,167 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dromokart - Home</title>
-  <!-- Importa un font moderno -->
+  <!-- Importa il font Roboto -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <!-- Collegamento al file CSS esterno se presente -->
+  <!-- Collegamento al file CSS esterno -->
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-    /* Reset e base styling */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    /* Header */
-    header {
-      background: #222;
-      color: #fff;
-      padding: 10px 20px;
-    }
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo img {
-      height: 50px;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-    }
-    nav ul li {
-      margin-left: 20px;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-      transition: color 0.3s;
-      cursor: pointer;
-    }
-    nav ul li a:hover {
-      color: #4CAF50;
-    }
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-      background: #e2e2e2;
-      margin-bottom: 40px;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2em;
-      color: #666;
-    }
-    /* Sezione scrollabile con immagine di sfondo */
-    .scrollable-section {
-      margin: 0 auto;
-      max-width: 1000px;
-      padding: 20px;
-    }
-    .scrollable-container {
-      position: relative;
-      height: 400px;
-      overflow: auto; /* Abilita lo scorrimento se necessario */
-      background-image: url('immagini/COPERTINA1.jpg'); /* Usa COPERTINA1.jpg come sfondo */
-      background-size: cover;
-      background-position: center;
-      border-radius: 8px;
-    }
-    .overlay-text {
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 5px;
-      color: #fff;
-      font-size: 1.2em;
-      max-width: 300px;
-    }
-    /* Footer */
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 15px 20px;
-      margin-top: 40px;
-    }
-    /* Modal per il Login */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.5);
-      align-items: center;
-      justify-content: center;
-    }
-    .modal-content {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      width: 90%;
-      max-width: 400px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      position: relative;
-    }
-    .modal-content h2 {
-      margin-bottom: 20px;
-    }
-    .modal-content input[type="text"],
-    .modal-content input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .modal-content button {
-      background-color: #4CAF50;
-      color: #fff;
-      padding: 10px;
-      border: none;
-      border-radius: 4px;
-      width: 100%;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    .modal-content button:hover {
-      background-color: #45a049;
-    }
-    .close-modal {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      font-size: 24px;
-      font-weight: bold;
-      color: #aaa;
-      cursor: pointer;
-    }
-    .close-modal:hover {
-      color: #000;
-    }
-  </style>
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="header-container">
       <div class="logo">
-        <a href="index.html"><img src="immagini/LOGO_KART.png" alt="Logo Dromokart"></a>
+        <a href="index.html">
+          <img src="immagini/LOGO_KART.png" alt="Logo Dromokart">
+        </a>
       </div>
       <nav>
         <ul>
@@ -172,6 +24,7 @@
           <li><a href="chi-siamo.html">Chi Siamo</a></li>
           <li><a href="tracciato.html">Il Tracciato</a></li>
           <li><a href="classifica.html">Classifica</a></li>
+          <li><a href="concessionario.html">Concessionario</a></li>
           <li><a id="loginBtn">LOGIN</a></li>
         </ul>
       </nav>
@@ -180,26 +33,80 @@
 
   <!-- Main Content -->
   <main>
+    <!-- Sezione Hero -->
     <section class="hero">
       <h1>Benvenuti in Dromokart</h1>
       <p>Scopri il mondo del karting con noi.</p>
     </section>
 
-    <!-- Sezione scrollabile con immagine di sfondo e testo sovrapposto -->
+    <!-- Sezione scrollabile con immagine iniziale -->
     <section class="scrollable-section">
       <div class="scrollable-container">
+        <img src="immagini/COPERTINA1.jpg" alt="Immagine Iniziale">
         <div class="overlay-text">
           Girare nei kart da noi è un'esperienza unica, adatta a tutte le età.
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- Footer -->
-<footer>
-  <p>&copy; 2025 KacioKart S.R.L. Tutti i diritti riservati.</p>
-</footer>
+<!-- Sezione scrollabile con immagine iniziale (modificata per COPERTINA2) -->
+<!-- Sezione descrizione con immagine COPERTINA2 e testo sotto -->
+<section class="description-section">
+  <div class="description-image">
+    <img src="immagini/COPERTINA2.jpg" alt="Esperienza di Karting">
+  </div>
+  <div class="description-text">
+    <p>
+      Contrariamente a quanto si pensi, il karting outdoor è uno sport adatto a un’ampia fascia di persone: uomini, donne, ragazzi e ragazze. I nostri kart sono suddivisi in tre livelli in base all’età:<br>
+      • dai 11 ai 14 anni utilizziamo kart da 50cc,<br>
+      • dai 14 ai 17 anni kart da 100cc,<br>
+      • e dai 18 anni in su kart da 150cc.
+      <br><br>
+      Questo sistema permette a chiunque, sia amatori che professionisti, di mettersi alla prova nelle numerose gare che organizziamo. Non è necessario portare alcun abbigliamento tecnico, perché lo forniamo direttamente dalla struttura; tuttavia, consigliamo di indossare pantaloni lunghi e scarpe chiuse.
+    </p>
+  </div>
+</section>
 
+
+<!-- Sezione Prezzario (senza immagine) -->
+<section class="pricing-section">
+  <div class="pricing-text">
+    <h2><strong>TARIFFE</strong></h2>
+    <p>
+      Tariffe<br>
+      Sessioni di corsa da 10 minuti<br><br>
+      Non si accettano prenotazioni<br>
+      Una corsa da 10 minuti 15€<br>
+      dalla seconda in giornata 13€<br>
+      Abbonamento nominale e non condivisibile con altri<br>
+      6 corse da 10 minuti 70€<br>
+      10 corse da 10 minuti 100€
+    </p>
+  </div>
+</section>
+
+<!-- Sezione Contatti -->
+<section class="contacts-section">
+  <h2>CONTATTI</h2>
+  <p>
+    Se sei alla ricerca di un'esperienza di guida emozionante o sei un fan delle corse sui Kart, KacioKart a Pavia è il luogo ideale per te. Siamo un tracciato di kart che offre una vasta gamma di servizi di guida per soddisfare le tue esigenze. Se hai domande o hai bisogno di maggiori informazioni, non esitare a contattarci. Puoi farlo attraverso il nostro numero di telefono o la nostra email.
+  </p>
+  <div class="contact-details">
+    <div class="contact-box phone">
+      <p>+39 3334455678</p>
+    </div>
+    <div class="contact-box email">
+      <p>kaciokart@universitadipavia.it</p>
+    </div>
+  </div>
+</section>
+
+    
+
+  <!-- Footer fisso -->
+  <footer>
+    <p>&copy; 2025 KacioKart S.R.L. Tutti i diritti riservati.</p>
+  </footer>
 
   <!-- Modal per il Login -->
   <div id="loginModal" class="modal">
@@ -214,7 +121,7 @@
     </div>
   </div>
 
-  <!-- Script per la gestione del modal -->
+  <!-- Script per la gestione del Modal -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       var loginBtn = document.getElementById("loginBtn");
