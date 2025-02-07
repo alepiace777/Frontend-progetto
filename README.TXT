@@ -6,7 +6,7 @@ CHI SIAMO (Andrea)
 -aggiungere un immagine del nostro team ?
 
 TRACCIATO (Andrea)
--Maggiori descrizione della pista
+-Sistemare le immagini
 
 CLASSIFICA (Andrea)
 -Integrazione con java per prendere i dati della Classifica

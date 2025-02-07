@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dromokart - Home</title>
+  <title>KacioKart - Home</title>
   <!-- Importa il font Roboto -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <!-- Collegamento al file CSS esterno -->
@@ -35,7 +35,7 @@
   <main>
     <!-- Sezione Hero -->
     <section class="hero">
-      <h1>Benvenuti in Dromokart</h1>
+      <h1>Benvenuti in KacioKart</h1>
       <p>Scopri il mondo del karting con noi.</p>
     </section>
 
@@ -108,18 +108,20 @@
     <p>&copy; 2025 KacioKart S.R.L. Tutti i diritti riservati.</p>
   </footer>
 
-  <!-- Modal per il Login -->
-  <div id="loginModal" class="modal">
-    <div class="modal-content">
-      <span class="close-modal" id="closeModal">&times;</span>
-      <h2>Login</h2>
-      <form action="login.php" method="post">
-        <input type="text" name="username" placeholder="Nome utente" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit">Accedi</button>
-      </form>
-    </div>
+<!-- Modal per il Login -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" id="closeModal">&times;</span>
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+      <input type="text" name="username" placeholder="Nome utente" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Accedi</button>
+    </form>
+    <p class="register-link">Non sei iscritto? <a href="registrazione.html">Iscriviti qui</a></p>
   </div>
+</div>
+
 
   <!-- Script per la gestione del Modal -->
   <script>

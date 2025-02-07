@@ -327,3 +327,16 @@ footer {
   flex: 1; 
 }
 
+.register-link {
+  margin-top: 15px;
+  font-size: 0.9em;
+  text-align: center;
+}
+.register-link a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+.register-link a:hover {
+  text-decoration: underline;
+}
