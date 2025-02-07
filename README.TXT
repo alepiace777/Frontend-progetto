@@ -71,4 +71,4 @@ dove bisogna inserire la categoria, quanti partecipano, se è o no un campionato
 attributi che al momento non ricordo ??
 -Pulsante creazione gara dove posso attingere solo alle gare dove ho creato la prenotazione, inserisco manualmente
 tutti i partecipanti ??
--Pagina per la creazione di campionato ??
+-Pagina per la creazione di campionato inserendo più gare secche ??
