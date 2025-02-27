@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center;">
-  <img src="images/logo.png" width="180" style="margin-right: 10px;">
-  <h1 style="font-size: 36px; font-weight: bold; margin: 0;">TogetherTicket</h1>
+  <img src="LOGO_KART.png" width="180" style="margin-right: 10px;">
+  <h1 style="font-size: 36px; font-weight: bold; margin: 0;">CacioKart</h1>
 </div>
 
 **CacioKart** è un sito web dove è possibile, dal lato utente, prenotare e acquistare kart, visualizzare le classifiche dei migliori piloti e, nella sezione del profilo personale, consultare il proprio miglior tempo e prenotare gare libere.
