@@ -1,68 +1,103 @@
+<div style="display: flex; align-items: center;">
+  <img src="images/logo.png" width="180" style="margin-right: 10px;">
+  <h1 style="font-size: 36px; font-weight: bold; margin: 0;">TogetherTicket</h1>
+</div>
+
+**CacioKart** è un sito web dove è possibile, dal lato utente, prenotare e acquistare kart, visualizzare le classifiche dei migliori piloti e, nella sezione del profilo personale, consultare il proprio miglior tempo e prenotare gare libere.
+
+---
+
+## Ruoli e Funzionalità
+
+All'interno dell'applicazione, sono presenti **5 dipendenti** con ruoli specifici:
+
+1. **Meccanico**  
+   - Aggiungere nuovi kart all’autodromo  
+   - Visualizzare ed eventualmente eliminare i kart esistenti  
+   - Aggiungere benzina ai kart e gestire la manutenzione
+
+2. **Gestore della concessionaria**  
+   - Aggiungere i kart  
+   - Aggiungere i pezzi di ricambio per i kart
+
+3. **Arbitro**  
+   - Visionare le gare secche (gare singole)  
+   - Aggiungere penalità, se necessario
+
+4. **Organizzatore**  
+   - Creare dei team e le gare secche  
+   - Aggiungere le persone che parteciperanno a tali gare  
+   - Creare e gestire un campionato
+
+5. **Proprietario**  
+   - Aggiungere o eliminare dipendenti  
+   - Visionare il bilancio
+
+---
+
+## Tecnologie Utilizzate
+
+![Frontend](https://img.shields.io/badge/Frontend-HTML-E34F26?style=for-the-badge&logoColor=white)  ![Java](https://img.shields.io/badge/Backend-Java-007396?style=for-the-badge&logo=java&logoColor=white)   ![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)  ![Eclipse](https://img.shields.io/badge/IDE-Eclipse-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white)  
 
 
-HOMEPAGE (Andrea)
 
-CHI SIAMO (Andrea)
--aggiungere un immagine del nostro team ?
+- **PHP/Javascript/HTML/CSS**: Frontend per l'interfaccia utente.
+- **Java**: Backend per la gestione delle operazioni, come l'autenticazione, la gestione degli eventi.
+- **MySQL WorkBench**: Database per la memorizzazione tutti i possibili dati.
+- **IntelliJ IDEA Community**: IDE utilizzato per lo sviluppo del progetto.
 
-TRACCIATO (Andrea)
--Sistemare le immagini
+## Prerequisiti
 
-CLASSIFICA (Andrea)
--Integrazione con java per prendere i dati della Classifica
+Per eseguire questo progetto sul proprio dispositivo, è necessario avere:
 
-LOGIN (Andrea)
--Pulsante dove se non si è registrato è possibile inserire i propri dati anagrafici per diventare socio
--parlare con java per verificare che il nome utente e password siano corretti
--aggiungere una funzionalità che quando si effettua la login correttamente appare un bottone premibile dove
-ti porta alla tua pagina privata
+- **Git**: Per usare il comando git nel prompt dei comandi. Puoi scaricarlo [qui](https://git-scm.com/downloads/win)
+- **Java Development Kit (JDK) 11 o superiore**: Assicurati di avere Java installato. Puoi scaricarlo da [qui](https://www.oracle.com/java/technologies/downloads/#jdk23-windows).
+- **MySQL WorkBench**: Per la gestione del database. Puoi scaricarlo da [qui](https://dev.mysql.com/downloads/installer/).
+- **IntelliJ IDEA Community***: Un IDE per lo sviluppo Java. Puoi scaricarlo da [qui](https://www.jetbrains.com/idea/download/?source=post_page---------------------------&section=windows)
 
-CONCESSIONARIA (Alessandro)
--copiare da tonykart https://www.tonykart.com/telai-racer-401T.php
--per i kart sono 3 immagini bottone che se cliccate ti riporta alla pagina del kart con tutti i suoi dettagli
-e ti da la possibilità di comprarlo, il bottone appare solo se si è loggati
+## Configurazione del progetto
 
-PAGINA DEI PRODOTTI (Alessandro)
--prodotti devono essere gestiti da un database, per le immagini dobbiamo capire ??
+1. **Clona il repository**: Nel prompt dei comandi digita:
 
-PROPRIETARIO (Alessandro)
--una volta loggato mi ritrovo in questa pagina
--Tasto per visione di bilancio, chiedo al database di farmi vedere una tabella con entrate e uscite
--Chiedo una query e mi fa vedere tutti i dipendenti, da li posso premere una "X" e
-mi rimuove il dipendente
--Pagina aggiuntiva Aggiunta dei dipendenti con i suoi dati
+   ```bash
+   git clone https://github.com/IngSW-unipv/Progetto-I25.git
 
-GESTORE DELLA CONCESSIONARIA (Alessandro)
--una volta loggato mi ritrovo in questa pagina
--Tasto per aggiungere la quantità kart (il kart è un modello già presente sul db)
--tasto per aggiungere la quantità di pezzi di ricambio (i pezzi sono già presenti sul db)
+3. **Configura il database**:
+   -Si esegue uno script per creare il database con tutte le tabelle chiamato CreaDB.sql
+   -Si esegue uno script per popolarlo chiamato PopolaDB.sql
 
-UTENTE (Andrea)
--Nella homepage dopo essersi registrato, può andare nella pagina personale cliccando il bottone
-il alto a destra
--Nella pagina personale è possibile cliccare il bottone per vedere i propri tempi migliori
--Nella pagina personale è possibile prenotare una gara libera
--Nella pagina personale è possibile vedere il proprio kart con la descrizione delle sue caratteristiche ??
+4. **Importa il progetto in IntelliJ**:
+   - Apri IntelliJ e seleziona `File > Open >
+   - Seleziona la cartella del progetto `Progetto-I25` che hai clonato.
+  
+5. **Cambia password di MySQL**:
+   - Apri workbench e inserisci questa stringa:
+   ALTER USER 'root'@'localhost' IDENTIFIED BY '';
 
-ARBITRO (da analizzare meglio) ?? (Alessandro)
--appena entra l'ARBITRO seleziona la gara, gli verrà restituita una tabella dal database con i tempi di gara
-- c'è un form da compilare (tutti i dati) e nel momento che si preme invio, verrà fatto un 
-update al database facendomi vedere in tempo reale il cambio di classifica (da vedere l'ultima parte)  
+6. **Configurazione del server XAMPP**:
+   - Aprire XAMPP andare in APACHE seleziona Config > Apache(httpd.conf)
+   - Nel documento trovare DocumentRoot e Direcoty, cambiare il percorso con il percorso del sito web
+   - Se non e' presente scaricalo [qui](https://www.apachefriends.org/download.html).
+   - Avviare il Apache
 
-MECCANICO (Andrea)
--visione di tutti i kart dell'autodromo (no concessionario)
--aggiungere dei kart all'autodromo(solo se presenti nel concessionario)
--togliere i kart dall'autodromo
--Per aggiungere la benzina basta compilare un form con scritto ID kart + litri benzina 
--flag/pulsante se si preme cambia la data della manutenzione di 6 mesi in avanti
+7. **Avvio dell'applicazione**:
+   - Avvia il server Apache tramite XAMPP
+   - Avviare il main del codice da IntelliJ IDEA
+   - Accedi all'applicazione nel browser visitando `http://localhost/`.
 
-ORGANIZZATORE (Parlare con il gruppo)
--abbiamo una pulsante che si chiama "CREA TEAM" questo pulsante mi manda ad un FORM che
-mi fa vedere la lista di tutti i piloti ed è possibile inserire IL CF dei due piloti, il colore e il nome 
-del TEAM e categoria ??
--Abbiamo un pulsante per creare la prenotazione della gara secca, in questo caso si apre un form
-dove bisogna inserire la categoria, quanti partecipano, se è o no un campionato, l'orario e altri 
-attributi che al momento non ricordo ??
--Pulsante creazione gara dove posso attingere solo alle gare dove ho creato la prenotazione, inserisco manualmente
-tutti i partecipanti ??
--Pagina per la creazione di campionato inserendo più gare secche ??
+---
+
+## Come utilizzare CacioKart**
+
+### Registrazione e login
+
+- Vai alla pagina di **login** per accedere al sistema se hai già un account.
+- Se sei un nuovo utente, vai alla pagina di **registrazione** per creare un nuovo account. Una volta registrato, sarai automaticamente loggato.
+- Esempi di credenziali:
+```bash
+        username: Admin1      password: 12345678              username: Andrea       password: 12345678
+ADMIN   username: Admin2      password: 12345678   UTENTE     username: Alessandro   password: 12345678
+        username: Admin3      password: 12345678              username: Luca         password: 12345678
+		username: Admin4      password: 12345678   UTENTE     username: Davide       password: 12345678
+        username: Admin5      password: 12345678              username: Adriano      password: 12345678
+```
