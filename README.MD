@@ -98,6 +98,6 @@ Per eseguire questo progetto sul proprio dispositivo, è necessario avere:
         username: Admin1      password: 12345678              username: Andrea       password: 12345678
 ADMIN   username: Admin2      password: 12345678   UTENTE     username: Alessandro   password: 12345678
         username: Admin3      password: 12345678              username: Luca         password: 12345678
-		username: Admin4      password: 12345678   UTENTE     username: Davide       password: 12345678
+	username: Admin4      password: 12345678   UTENTE     username: Davide       password: 12345678
         username: Admin5      password: 12345678              username: Adriano      password: 12345678
 ```
