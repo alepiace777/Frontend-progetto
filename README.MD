@@ -42,7 +42,7 @@ All'interno dell'applicazione, sono presenti **5 dipendenti** con ruoli specific
 
 ## Tecnologie Implementate
 
-![Frontend](https://img.shields.io/badge/Frontend-HTML-E34F26?style=for-the-badge\&logoColor=white)  ![Java](https://img.shields.io/badge/Backend-Java-007396?style=for-the-badge\&logo=java\&logoColor=white)   ![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)  ![Eclipse](https://img.shields.io/badge/IDE-Eclipse-2C2255?style=for-the-badge\&logo=eclipseide\&logoColor=white)
+![Frontend](https://img.shields.io/badge/Frontend-HTML-E34F26?style=for-the-badge\&logoColor=white)  ![Java](https://img.shields.io/badge/Backend-Java-007396?style=for-the-badge\&logo=java\&logoColor=white)   ![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)  ![IntelliJ IDEA](https://img.shields.io/badge/IDE-IntelliJ_IDEA-000000?style=for-the-badge\&logo=intellij-idea\&logoColor=white)
 
 * **HTML/CSS/PHP/JavaScript**: Sviluppo frontend per l'interfaccia utente.
 * **Java**: Backend per autenticazione e gestione delle operazioni logiche.
