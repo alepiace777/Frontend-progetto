@@ -3,7 +3,7 @@
   <h1 style="font-size: 36px; font-weight: bold; margin: 0;">CacioKart</h1>
 </div>
 
-**CacioKart** è un sito web dove è possibile, dal lato utente, prenotare e acquistare kart, visualizzare le classifiche dei migliori piloti e, nella sezione del profilo personale, consultare il proprio miglior tempo e prenotare gare libere.
+**CacioKart** è una piattaforma web dove è possibile, dal lato utente, prenotare e acquistare kart, visualizzare le classifiche dei migliori piloti e, nella sezione del profilo personale, consultare il proprio miglior tempo e prenotare gare libere.
 
 ---
 
@@ -11,89 +11,106 @@
 
 All'interno dell'applicazione, sono presenti **5 dipendenti** con ruoli specifici:
 
-1. **Meccanico**  
-   - Aggiungere nuovi kart all’autodromo  
-   - Visualizzare ed eventualmente eliminare i kart esistenti  
-   - Aggiungere benzina ai kart e gestire la manutenzione
+1. **Meccanico**
 
-2. **Gestore della concessionaria**  
-   - Aggiungere i kart  
-   - Aggiungere i pezzi di ricambio per i kart
+   * Aggiungere nuovi kart all’autodromo
+   * Visualizzare ed eventualmente eliminare i kart esistenti
+   * Aggiungere benzina ai kart e gestire la manutenzione
 
-3. **Arbitro**  
-   - Visionare le gare secche (gare singole)  
-   - Aggiungere penalità, se necessario
+2. **Gestore della concessionaria**
 
-4. **Organizzatore**  
-   - Creare dei team e le gare secche  
-   - Aggiungere le persone che parteciperanno a tali gare  
-   - Creare e gestire un campionato
+   * Aggiungere i kart
+   * Aggiungere i pezzi di ricambio per i kart
 
-5. **Proprietario**  
-   - Aggiungere o eliminare dipendenti  
-   - Visionare il bilancio
+3. **Arbitro**
+
+   * Visionare le gare secche (gare singole)
+   * Aggiungere penalità, se necessario
+
+4. **Organizzatore**
+
+   * Creare dei team e le gare secche
+   * Aggiungere le persone che parteciperanno a tali gare
+   * Creare e gestire un campionato
+
+5. **Proprietario**
+
+   * Aggiungere o eliminare dipendenti
+   * Visionare il bilancio
 
 ---
 
-## Tecnologie Utilizzate
+## Tecnologie Implementate
 
-![Frontend](https://img.shields.io/badge/Frontend-HTML-E34F26?style=for-the-badge&logoColor=white)  ![Java](https://img.shields.io/badge/Backend-Java-007396?style=for-the-badge&logo=java&logoColor=white)   ![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)  ![Eclipse](https://img.shields.io/badge/IDE-Eclipse-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white)  
+![Frontend](https://img.shields.io/badge/Frontend-HTML-E34F26?style=for-the-badge\&logoColor=white)  ![Java](https://img.shields.io/badge/Backend-Java-007396?style=for-the-badge\&logo=java\&logoColor=white)   ![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)  ![Eclipse](https://img.shields.io/badge/IDE-Eclipse-2C2255?style=for-the-badge\&logo=eclipseide\&logoColor=white)
 
+* **HTML/CSS/PHP/JavaScript**: Sviluppo frontend per l'interfaccia utente.
+* **Java**: Backend per autenticazione e gestione delle operazioni logiche.
+* **MySQL Workbench**: Gestione del database e archiviazione dati.
+* **IntelliJ IDEA Community**: Ambiente di sviluppo utilizzato per il coding Java.
 
+---
 
-- **PHP/Javascript/HTML/CSS**: Frontend per l'interfaccia utente.
-- **Java**: Backend per la gestione delle operazioni, come l'autenticazione, la gestione degli eventi.
-- **MySQL WorkBench**: Database per la memorizzazione tutti i possibili dati.
-- **IntelliJ IDEA Community**: IDE utilizzato per lo sviluppo del progetto.
+## Requisiti di Installazione
 
-## Prerequisiti
+Per eseguire il progetto localmente è necessario disporre di:
 
-Per eseguire questo progetto sul proprio dispositivo, è necessario avere:
+* **Git**: Scaricabile [qui](https://git-scm.com/downloads/win).
+* **Java Development Kit (JDK) 11+**: Disponibile [qui](https://www.oracle.com/java/technologies/downloads/#jdk23-windows).
+* **MySQL Workbench**: Scaricabile [qui](https://dev.mysql.com/downloads/installer/).
+* **IntelliJ IDEA Community**: Scaricabile [qui](https://www.jetbrains.com/idea/download/).
 
-- **Git**: Per usare il comando git nel prompt dei comandi. Puoi scaricarlo [qui](https://git-scm.com/downloads/win)
-- **Java Development Kit (JDK) 11 o superiore**: Assicurati di avere Java installato. Puoi scaricarlo da [qui](https://www.oracle.com/java/technologies/downloads/#jdk23-windows).
-- **MySQL WorkBench**: Per la gestione del database. Puoi scaricarlo da [qui](https://dev.mysql.com/downloads/installer/).
-- **IntelliJ IDEA Community***: Un IDE per lo sviluppo Java. Puoi scaricarlo da [qui](https://www.jetbrains.com/idea/download/?source=post_page---------------------------&section=windows)
+## Configurazione del Progetto
 
-## Configurazione del progetto
+1. **Clonare il repository**:
 
-1. **Clona il repository**: Nel prompt dei comandi digita:
+```bash
+git clone https://github.com/IngSW-unipv/Progetto-I25.git
+```
 
-   ```bash
-   git clone https://github.com/IngSW-unipv/Progetto-I25.git
+2. **Configurare il Database**:
 
-3. **Configura il database**:
-   -Si esegue uno script per creare il database con tutte le tabelle chiamato CreaDB.sql
-   -Si esegue uno script per popolarlo chiamato PopolaDB.sql
+   * Eseguire lo script `CreaDB.sql` per generare le tabelle.
+   * Eseguire `PopolaDB.sql` per inserire dati iniziali.
 
-4. **Importa il progetto in IntelliJ**:
-   - Apri IntelliJ e seleziona `File > Open >
-   - Seleziona la cartella del progetto `Progetto-I25` che hai clonato.
-  
-5. **Cambia password di MySQL**:
-   - Apri workbench e inserisci questa stringa:
+3. **Importare in IntelliJ**:
+
+   * Aprire IntelliJ e selezionare `File > Open`.
+   * Selezionare la directory `Progetto-I25`.
+
+4. **Configurare MySQL Workbench**:
+
+   * Aprire MySQL Workbench ed eseguire:
+
+   ```sql
    ALTER USER 'root'@'localhost' IDENTIFIED BY '';
+   ```
 
-6. **Configurazione del server XAMPP**:
-   - Aprire XAMPP andare in APACHE seleziona Config > Apache(httpd.conf)
-   - Nel documento trovare DocumentRoot e Direcoty, cambiare il percorso con il percorso del sito web
-   - Se non e' presente scaricalo [qui](https://www.apachefriends.org/download.html).
-   - Avviare il Apache
+5. **Impostare Server Apache (XAMPP)**:
 
-7. **Avvio dell'applicazione**:
-   - Avvia il server Apache tramite XAMPP
-   - Avviare il main del codice da IntelliJ IDEA
-   - Accedi all'applicazione nel browser visitando `http://localhost/`.
+   * Aprire XAMPP e selezionare `Config > Apache (httpd.conf)`.
+   * Modificare il percorso di `DocumentRoot` e `Directory` con la posizione del sito.
+   * Se non installato, scaricare XAMPP da [qui](https://www.apachefriends.org/download.html).
+   * Avviare Apache da XAMPP.
+
+6. **Avvio Applicazione**:
+
+   * Avviare il server Apache tramite XAMPP.
+   * Eseguire il `main` del codice da IntelliJ IDEA.
+   * Accedere all'applicazione dal browser all'indirizzo `http://localhost/`.
 
 ---
 
-## Come utilizzare CacioKart**
+## Guida Rapida all'Uso di CacioKart
 
-### Registrazione e login
+### Accesso e Registrazione
 
-- Vai alla pagina di **login** per accedere al sistema se hai già un account.
-- Se sei un nuovo utente, vai alla pagina di **registrazione** per creare un nuovo account. Una volta registrato, sarai automaticamente loggato.
-- Esempi di credenziali:
+* **Accesso**: Usa la pagina di login se già registrato.
+
+* **Registrazione**: Nuovi utenti possono registrarsi dalla pagina apposita. La registrazione porta automaticamente all'accesso.
+
+* Credenziali esempio:
+
 ```bash
         username: Admin1      password: 12345678              username: Andrea       password: 12345678
 ADMIN   username: Admin2      password: 12345678   UTENTE     username: Alessandro   password: 12345678
